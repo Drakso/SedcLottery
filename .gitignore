@@ -3,3 +3,8 @@
 ################################################################################
 
 /.vs
+/Lottery.Web/.vs
+/Lottery.Web/Lottery.Web/bin
+/Lottery.Web/Lottery.Web/obj/Debug
+/Lottery.Web/Lottery.Web.Tests/obj/Debug
+/Lottery.Web/packages
