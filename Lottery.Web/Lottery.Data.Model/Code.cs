@@ -14,7 +14,7 @@ namespace Lottery.Data.Model
 
         public string CodeValue { get; set; }
         public bool IsWinning { get; set; }
-        [DefaultValue(false)]
+        [DefaultValue(false)] // An attribute setting a default value for a property
         public bool IsUsed { get; set; }
 
     }
