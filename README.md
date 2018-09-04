@@ -13,9 +13,7 @@ This course will cover full stack development, using all the technologies that w
 * Angular / Typescript
 * Azure  Databases / Azure SDK
 
-###Structure of the architecture:
-
-Structure of the architecture:
+### Structure of the architecture:
 
 * Lottery.Data.Model
 A class library project where we keep all the data models used for communication with the DB and the entity framework context
