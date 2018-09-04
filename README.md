@@ -13,7 +13,7 @@ This course will cover full stack development, using all the technologies that w
 * Angular / Typescript
 * Azure  Databases / Azure SDK
 
-## Technologies we are going to use
+###Structure of the architecture:
 
 Structure of the architecture:
 
