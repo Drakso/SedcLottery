@@ -1,6 +1,6 @@
 # SedcLottery
 
-This is project for Expert C# Topics
+This is a project for Expert C# Topics
 
 ## Project goal
 
@@ -27,7 +27,7 @@ A class library project where we have a generic mapper that will map from data m
 A class library project where we have all the view models needed in the webapi application
 * Lottery.Web
 A WebApi ASP.NET application that is exposed to the outside
-*Lottery.Web.Tests
+* Lottery.Web.Tests
 A Unit Test project where unit tests should be written ( Might stay empty throughout the course, depending on time )
 
 ## Course Classes
