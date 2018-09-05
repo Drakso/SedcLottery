@@ -40,7 +40,7 @@ What we covered so far:
 * Talked about the specification of the Lottery Project
 * Discussed and created a UML diagram for the project structure
 * Created an empty project
-* Discussed about creating a repository on github, commiting and pishing our code
+* Discussed about creating a repository on github, committing and pushing our code
 
 ### Class 2
 
@@ -48,5 +48,16 @@ What we covered so far:
 * Installed entity framework
 * Created data models (classes) with entity framework in mind
 * Created an entity framework context
-* Created a seed method and configurations for code first aproach
+* Created a seed method and configurations for code first approach
 * Discussed and created a generic repository class for the data models
+
+### Class 3
+* Discussed about architecture and view models
+* Created view models
+* Created Service class and interface
+* Talked about [Inversion Of Control (IoC) and Dependency Injection (DI)](https://github.com/rpanchevski/SedcLottery/blob/master/DependencyInjection.md "Explanation document for Dependency Injection and Inversion of Control")
+* Implemented controller and service logic without DI
+* Changed controller and service with constructor DI
+* Talked about IoC Containers
+* Installed AutoFac container and implemented AutoFac configuration
+* Changed controller and service with AutoFac Container DI
