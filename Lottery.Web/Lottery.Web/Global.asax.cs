@@ -12,6 +12,7 @@ namespace Lottery.Web
         protected void Application_Start()
         {
             GlobalConfiguration.Configure(WebApiConfig.Register);
+            IocConfig.Initialize(GlobalConfiguration.Configuration);
         }
     }
 }
