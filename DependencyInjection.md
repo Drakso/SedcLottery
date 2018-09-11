@@ -13,9 +13,9 @@ Dependency Injection is a technique which is used to implement Inversion of Cont
 This implementation is not using any IoC techniques. As you can see the service methods and the controller actions need to make multiple instances of the objects they need (dependencies). If there were multiple dependencies there would have been even more instances in every method and action.
 ![Example without DI](https://raw.githubusercontent.com/rpanchevski/SedcLottery/master/Img/withoutDi.png "No DI Example")
 
-##### An example of an implementation using Constructor DI
+##### An example of an implementation using instancing in constructor
 
-In this example we are using Constructor Dependency Injection technique. This allows us to create one instance of the dependencies that our methods in the service would need and one instance of the dependencies that our controller actions would need. This instance is created in the service or controller constructor and is kept in a private field so anyone in the current class can access it. So when an instance of the service or controller is created, instances of the dependencies are created as well and our methods or actions can use that one instance instead of making instances by themselves.
+In this example we are using an instance of the services and repositories we need in the constructor so it can be accessable in our class. This allows us to create one instance of the dependencies that our methods in the service would need and one instance of the dependencies that our controller actions would need. This instance is created in the service or controller constructor and is kept in a private field so anyone in the current class can access it. So when an instance of the service or controller is created, instances of the dependencies are created as well and our methods or actions can use that one instance instead of making instances by themselves.
 ![Example using Constructor DI](https://raw.githubusercontent.com/rpanchevski/SedcLottery/master/Img/diWithoutContainer.png "Constructor DI Example")
 
 ##### An example of an implementation using IoC Container

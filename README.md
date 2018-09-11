@@ -61,3 +61,11 @@ What we covered so far:
 * Talked about IoC Containers
 * Installed AutoFac container and implemented AutoFac configuration
 * Changed controller and service with AutoFac Container DI
+
+### Class 4
+* Created another service with dependency injection and unit of work
+* Discussed unit of work pattern
+* Implemented the services and controllers to work end to end
+* Added connection string and enabled auto migrations
+* Installed swagger to test endpoints
+* Tested the api end to end with swagger
