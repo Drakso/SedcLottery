@@ -62,5 +62,10 @@ namespace Lottery.Service
                 AwardDescription = award.AwardDescription
             };
         }
+
+        public List<UserCodeAwardModel> GetAllWinners()
+        {
+            return new List<UserCodeAwardModel>();
+        }
     }
 }

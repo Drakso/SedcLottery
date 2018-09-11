@@ -19,3 +19,8 @@
 /Lottery.Web/Lottery.View.Model/bin/Debug
 /Lottery.Web/Lottery.View.Model/obj/Debug
 /Lottery.Web/Lottery.Web.Tests/bin/Debug
+/Lottery.Web/Lottery.Data/obj/Release
+/Lottery.Web/Lottery.Data.Model/obj/Release
+/Lottery.Web/Lottery.Mapper/obj/Release
+/Lottery.Web/Lottery.Service/obj/Release
+/Lottery.Web/Lottery.View.Model/obj/Release

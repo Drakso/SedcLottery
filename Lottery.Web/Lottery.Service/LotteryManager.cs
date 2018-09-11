@@ -104,5 +104,17 @@ namespace Lottery.Service
             var randomAwardIndex = rnd.Next(0, availableAwards.Count);
             return availableAwards[randomAwardIndex];
         }
+
+        public List<UserCodeAwardModel> GetAllWinners()
+        {
+            using(new UnitOfWork(_dbContext))
+            {
+                var winners = _userCodeAwardRepository.GetAll().Include(x => x.UserCode.Code).Include(x => x.Award).ToList();
+
+                return winners.Select(x => x.Map<UserCodeAward, UserCodeAwardModel>()).ToList();
+
+
+            }
+        }
     }
 }
