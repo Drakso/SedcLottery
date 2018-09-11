@@ -12,6 +12,9 @@ namespace Lottery.Web
         protected void Application_Start()
         {
             GlobalConfiguration.Configure(WebApiConfig.Register);
+            // This is the initializing of the AutoFac IOC Container
+            // We call the initialize function here which initializes the container
+            // Since the container methods are static we can call them without making an instance of the class anywhere
             IocConfig.Initialize(GlobalConfiguration.Configuration);
         }
     }

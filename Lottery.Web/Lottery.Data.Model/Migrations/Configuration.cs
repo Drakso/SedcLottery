@@ -8,6 +8,9 @@ namespace Lottery.Data.Model.Migrations
         // This is the configuration method that manages the entity framework communication with the database
         public Configuration()
         {
+            // We set the automatic migrations to true
+            // This means that when we create a new model, Entity Framework will create a new migration automatically
+            // You might need to do an update-database command in the console after an automatic migration
             AutomaticMigrationsEnabled = true;
         }
 

@@ -10,6 +10,7 @@ using Lottery.View.Model;
 
 namespace Lottery.Service
 {
+    // This lottery manager or service class is created without dependency injection and it is just for comparison
     public class LotteryManagerV0 : ILotteryManager
     {
         public AwardModel CheckCode(UserCodeModel userCodeModel)

@@ -10,8 +10,10 @@ using Lottery.View.Model;
 
 namespace Lottery.Service
 {
+    // This is the lottery service or manager. From here we can execute all the business logic
     public class LotteryManager : ILotteryManager
     {
+        // These are all the dependencies. They will all be resolved by the AutoFac IOC Container through the constructor
         private readonly DbContext _dbContext;
         private readonly IRepository<Code> _codeRepository;
         private readonly IRepository<Award> _awardRepository;
@@ -33,6 +35,7 @@ namespace Lottery.Service
 
         public AwardModel CheckCode(UserCodeModel userCodeModel)
         {
+            // This is how we call the unit of work class. We create it in a using block so we can dispose of it automatically when we are done
             using (var uow = new UnitOfWork(_dbContext))
             {
                 var code = _codeRepository.GetAll().FirstOrDefault(x => x.CodeValue == userCodeModel.Code.CodeValue);
@@ -52,11 +55,13 @@ namespace Lottery.Service
                     SentAt = DateTime.Now
                 };
                 
+                // Here we interact with the context and save something, but the changes are not yet written in the database
                 _userCodeRepository.Insert(userCode);
 
                 Award award = null;
                 if (code.IsWinning)
                 {
+                    // This is a custom function that is called for getting a random award
                     award = GetRandomAward(RuffledType.Immediate);
 
                     var userCodeAward = new UserCodeAward
@@ -71,8 +76,10 @@ namespace Lottery.Service
 
                 code.IsUsed = true;
 
+                // Here the unit of work Commit method is called and if everything passed, then the changes are saved in to the database
                 uow.Commit();
 
+                // After we are done with the logic, we transform the Award object into AwardModel object that is used in the Application
                 return award?.Map<Award, AwardModel>();
             }
         }
