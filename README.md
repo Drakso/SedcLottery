@@ -1,6 +1,6 @@
 # SedcLottery
 
-This is project for Expert C# Topics
+This is a project for Expert C# Topics
 
 ## Project goal
 
@@ -13,7 +13,7 @@ This course will cover full stack development, using all the technologies that w
 * Angular / Typescript
 * Azure  Databases / Azure SDK
 
-###Structure of the architecture:
+### Structure of the architecture:
 
 * Lottery.Data.Model
 A class library project where we keep all the data models used for communication with the DB and the entity framework context
@@ -27,7 +27,7 @@ A class library project where we have a generic mapper that will map from data m
 A class library project where we have all the view models needed in the webapi application
 * Lottery.Web
 A WebApi ASP.NET application that is exposed to the outside
-*Lottery.Web.Tests
+* Lottery.Web.Tests
 A Unit Test project where unit tests should be written ( Might stay empty throughout the course, depending on time )
 
 ## Course Classes
@@ -40,7 +40,7 @@ What we covered so far:
 * Talked about the specification of the Lottery Project
 * Discussed and created a UML diagram for the project structure
 * Created an empty project
-* Discussed about creating a repository on github, commiting and pishing our code
+* Discussed about creating a repository on github, committing and pushing our code
 
 ### Class 2
 
@@ -48,5 +48,24 @@ What we covered so far:
 * Installed entity framework
 * Created data models (classes) with entity framework in mind
 * Created an entity framework context
-* Created a seed method and configurations for code first aproach
+* Created a seed method and configurations for code first approach
 * Discussed and created a generic repository class for the data models
+
+### Class 3
+* Discussed about architecture and view models
+* Created view models
+* Created Service class and interface
+* Talked about [Inversion Of Control (IoC) and Dependency Injection (DI)](https://github.com/rpanchevski/SedcLottery/blob/master/DependencyInjection.md "Explanation document for Dependency Injection and Inversion of Control")
+* Implemented controller and service logic without DI
+* Changed controller and service with constructor DI
+* Talked about IoC Containers
+* Installed AutoFac container and implemented AutoFac configuration
+* Changed controller and service with AutoFac Container DI
+
+### Class 4
+* Created another service with dependency injection and unit of work
+* Discussed unit of work pattern
+* Implemented the services and controllers to work end to end
+* Added connection string and enabled auto migrations
+* Installed swagger to test endpoints
+* Tested the api end to end with swagger

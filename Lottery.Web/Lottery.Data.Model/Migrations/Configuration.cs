@@ -8,9 +8,7 @@ namespace Lottery.Data.Model.Migrations
         // This is the configuration method that manages the entity framework communication with the database
         public Configuration()
         {
-            // This is a configuration that we disabled
-            // This configuration is the automatic migrations meaning that we must create our own migrations
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         // This is a seed method. This method runs whenever a database is created using the Code First aproach
