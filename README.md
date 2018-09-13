@@ -69,3 +69,11 @@ What we covered so far:
 * Added connection string and enabled auto migrations
 * Installed swagger to test endpoints
 * Tested the api end to end with swagger
+
+### Class 5
+* Explained the mapper that we implemented in detail
+* Added show winners endpoint
+* Finished the implementation of the backend
+* Tested both endpoints and backend with swagger
+* Started an angular project
+* Talked about angular and single page applications
