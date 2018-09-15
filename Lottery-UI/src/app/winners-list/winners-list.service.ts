@@ -7,10 +7,10 @@ import { Observable } from "rxjs";
     providedIn: 'root'
 })
 export class WinnersListService {
-    winnersUrl: string = "http://localhost:13596/api/lottery/"
+    lotteryUrl: string = "http://localhost:13596/api/lottery/"
     constructor(private http: HttpClient) {}
 
     getAllWinners(): Observable<Array<IUserCodeAward>> {
-        return this.http.get<Array<IUserCodeAward>>(this.winnersUrl + "getAllWinners");
+        return this.http.get<Array<IUserCodeAward>>(this.lotteryUrl + "getAllWinners");
     }
 }
