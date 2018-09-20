@@ -24,3 +24,11 @@
 /Lottery.Web/Lottery.Mapper/obj/Release
 /Lottery.Web/Lottery.Service/obj/Release
 /Lottery.Web/Lottery.View.Model/obj/Release
+/Lottery.Web/Lottery.Data/bin/Release
+/Lottery.Web/Lottery.Data.Model/bin/Release
+/Lottery.Web/Lottery.Mapper/bin/Release
+/Lottery.Web/Lottery.Service/bin/Release
+/Lottery.Web/Lottery.View.Model/bin/Release
+/Lottery.Web/Lottery.Web/obj/Release
+/Lottery.Web/Lottery.Web/Properties/PublishProfiles
+/Lottery.Web/Lottery.Web.Tests/obj/Release

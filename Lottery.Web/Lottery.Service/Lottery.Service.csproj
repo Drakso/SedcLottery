@@ -54,7 +54,6 @@
     <Compile Include="ILotteryManager.cs" />
     <Compile Include="IoC.Autofac\ServiceModule.cs" />
     <Compile Include="LotteryManager.cs" />
-    <Compile Include="LotteryManagerV0.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UoW\IUnitOfWork.cs" />
     <Compile Include="UoW\UnitOfWork.cs" />

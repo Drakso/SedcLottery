@@ -5,7 +5,9 @@ namespace Lottery.Data.Model
 {
     public class LotteryContext : DbContext
     {
-        public LotteryContext() : base("LotteryDb")
+        public LotteryContext() : 
+            base("Data Source=DESKTOP-QKEPS8P;Initial Catalog=LotteryDb;User ID=dbUser;Password=P@ssw0rd")
+            //base("Server=tcp:lottery-db-189.database.windows.net,1433;Initial Catalog=LotteryDB;Persist Security Info=False;User ID=lottery-user;Password=P@ssw0rd;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;")
         {
         }
 

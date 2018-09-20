@@ -10,7 +10,7 @@ import { WinnersListService } from './winners-list.service';
 export class WinnersListComponent implements OnInit {
   public winners: Array<IUserCodeAward>;
 
-  constructor(private winnersListService: WinnersListService) { 
+  constructor(private winnersListService: WinnersListService) {
     this.winners = [];
   }
 
