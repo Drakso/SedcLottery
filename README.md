@@ -76,7 +76,7 @@ What we covered so far:
 * Finished the implementation of the backend
 * Tested both endpoints and backend with swagger
 * Started an Angular project
-* Talked about angular and single page applications
+* Talked about [Angular](https://github.com/rpanchevski/SedcLottery/blob/master/Angular.md "Explanation about Angular architecture") and single page applications
 
 ### Class 6
 * Explained angular architecture

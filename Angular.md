@@ -1,6 +1,6 @@
 # Angular Architecture
 
-![Angular Diagram](https://raw.githubusercontent.com/rpanchevski/SedcLottery/master/Img/Angular.png "Angular Diagram")
+![Angular Diagram](https://raw.githubusercontent.com/rpanchevski/SedcLottery/master/Img/AngularDiagram.png "Angular Diagram")
 
 ## Components
 
