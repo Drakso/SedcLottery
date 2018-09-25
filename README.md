@@ -75,5 +75,33 @@ What we covered so far:
 * Added show winners endpoint
 * Finished the implementation of the backend
 * Tested both endpoints and backend with swagger
-* Started an angular project
-* Talked about angular and single page applications
+* Started an Angular project
+* Talked about [Angular](https://github.com/rpanchevski/SedcLottery/blob/master/Angular.md "Explanation about Angular architecture") and single page applications
+
+### Class 6
+* Explained angular architecture
+* Created winners-list component
+* Set-up routing
+* Finished the whole end-point
+* Tested with swager
+* Talked about git branching models
+
+### Class 7
+* Created the submit-code component
+* Finished the second end-point
+* Tested with swager
+* Go through the application end to end with break-points
+* Go through the mapper with break-points
+
+### Class 8
+* Talk about deployment
+* Talk about Azure and IIS
+* Deploy ASP.NET on IIS
+* Deploy Angular application
+* Demo on Azure deployment
+
+### Class 9
+* Finishing deployment
+* Talk about asp.net Core
+* Talk about the console service for per-day and final raffle
+* Begin developing the console service
