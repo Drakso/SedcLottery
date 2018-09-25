@@ -33,3 +33,12 @@
 /Lottery.Web/Lottery.Web/Properties/PublishProfiles
 /Lottery.Web/Lottery.Web.Tests/obj/Release
 /Lottery-UI/.vscode
+/Lottery.RaffleConsole/.vs/Lottery.RaffleConsole
+/Lottery.RaffleConsole/Lottery.Data/bin/Debug/netstandard2.0
+/Lottery.RaffleConsole/Lottery.Data/obj
+/Lottery.RaffleConsole/Lottery.Data.Model/bin/Debug/netstandard2.0
+/Lottery.RaffleConsole/Lottery.Data.Model/obj
+/Lottery.RaffleConsole/Lottery.RaffleConsole/bin/Debug/netcoreapp2.1
+/Lottery.RaffleConsole/Lottery.RaffleConsole/obj
+/Lottery.RaffleConsole/Lottery.Service/bin/Debug/netstandard2.0
+/Lottery.RaffleConsole/Lottery.Service/obj
