@@ -7,14 +7,17 @@ namespace Lottery.Data
     public class Repository<T> : IRepository<T> where T : class, IEntity
     {
         protected DbSet<T> DbSet;
-
+        private readonly DbContext _dbContext;
+        
         public Repository(DbContext dbContext)
         {
             DbSet = dbContext.Set<T>();
+            _dbContext = dbContext;
         }
         public void Insert(T entity)
         {
             DbSet.Add(entity);
+            _dbContext.SaveChanges();
         }
 
         public void Delete(T entity)

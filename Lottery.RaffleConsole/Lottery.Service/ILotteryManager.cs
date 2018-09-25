@@ -4,6 +4,6 @@ namespace Lottery.Service
 {
     public interface ILotteryManager
     {
-        void GiveAward(RaffledType type);
+        void GiveAwards(RaffledType type);
     }
 }
