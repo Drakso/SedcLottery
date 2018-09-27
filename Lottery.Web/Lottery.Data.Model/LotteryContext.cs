@@ -7,7 +7,9 @@ namespace Lottery.Data.Model
     public class LotteryContext : DbContext
     {
         // We create an empty constructor but we call the parent constructor that requests for a database by name, so we are giving it one here
-        public LotteryContext() : base("LotteryDb")
+        public LotteryContext() : 
+            base("LotteryDb")
+            //base("Server=tcp:lottery-db-189.database.windows.net,1433;Initial Catalog=LotteryDB;Persist Security Info=False;User ID=lottery-user;Password=P@ssw0rd;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;")
         {
         }
 

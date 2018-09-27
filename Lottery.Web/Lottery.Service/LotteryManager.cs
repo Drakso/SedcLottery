@@ -84,18 +84,21 @@ namespace Lottery.Service
             }
         }
 
+        // Function that picks a random reward depending on the type
         private Award GetRandomAward(RuffledType type)
         {
+            // List with all rewards from the database by type 
             var awards = _awardRepository.GetAll().Where(x => x.RuffledType == (byte) type).ToList();
+            // List with all rewards that are awarded already
             var awardedAwards = _userCodeAwardRepository
                 .GetAll()
                 .Where(x => x.Award.RuffledType == (byte) type)
                 .Select(x => x.Award)
                 .GroupBy(x => x.Id)
                 .ToList();
-
+            // Empty list for available rewards
             var availableAwards = new List<Award>();
-
+            // Checking if reward from all awards match the awarded awords and filter the ones that are not awarded in the new list availableAwards
             foreach (var award in awards)
             {
                 var numberOfAwardedAwards = awardedAwards
@@ -106,10 +109,23 @@ namespace Lottery.Service
 
             if(availableAwards.Count == 0)
                 throw new ApplicationException("We are out of awards. Sorry!");
-
+            // Finds a random number from the Random() class between 0 and the length of the availableAwards list
             var rnd = new Random();
             var randomAwardIndex = rnd.Next(0, availableAwards.Count);
+            // Return a reward from the availableAwards list with the random number as index
             return availableAwards[randomAwardIndex];
+        }
+
+        public List<UserCodeAwardModel> GetAllWinners()
+        {
+            using(new UnitOfWork(_dbContext))
+            {
+                var winners = _userCodeAwardRepository.GetAll().Include(x => x.UserCode.Code).Include(x => x.Award).ToList();
+
+                return winners.Select(x => x.Map<UserCodeAward, UserCodeAwardModel>()).ToList();
+
+
+            }
         }
     }
 }

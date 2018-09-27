@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json.Serialization;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,6 +17,11 @@ namespace Lottery.Web
             // We call the initialize function here which initializes the container
             // Since the container methods are static we can call them without making an instance of the class anywhere
             IocConfig.Initialize(GlobalConfiguration.Configuration);
+            GlobalConfiguration.Configuration
+      .Formatters
+      .JsonFormatter
+      .SerializerSettings
+      .ContractResolver = new CamelCasePropertyNamesContractResolver();
         }
     }
 }

@@ -20,5 +20,11 @@ namespace Lottery.Web.Controllers
         {
             return _lotteryManager.CheckCode(userCodeModel);
         }
+
+        [HttpGet]
+        public List<UserCodeAwardModel> GetAllWinners() 
+        {
+            return _lotteryManager.GetAllWinners();
+        }
     }
 }

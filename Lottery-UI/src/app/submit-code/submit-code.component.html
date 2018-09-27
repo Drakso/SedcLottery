@@ -1,0 +1,22 @@
+<!-- This is the submit-code view -->
+<!-- The container, form-group, form-control, btn and btn-success classes are from bootstrap for styling only -->
+<div class="container">
+  <!-- Angular adds a novalidate attribute to forms so to override this and trigger validations we have added the ngNativeValidate attribute -->
+  <!-- On submit we call the method from our component submit() -->
+  <form ngNativeValidate (submit)="submit()">
+    <div class="form-group">
+      <!-- With the ngModel binding we bind the inputs with our userCode model in the component code -->
+      <input type="text" class="form-control" name="first-name" placeholder="First Name" [(ngModel)]="userCode.firstName" required> 
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" name="last-name" placeholder="Last Name" [(ngModel)]="userCode.lastName" required> 
+    </div>
+    <div class="form-group">
+      <input type="email" class="form-control" name="email" placeholder="E-mail" [(ngModel)]="userCode.email" required> 
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" name="code" placeholder="Code" [(ngModel)]="userCode.code.codeValue" required> 
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>

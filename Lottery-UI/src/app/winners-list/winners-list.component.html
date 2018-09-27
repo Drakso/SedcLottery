@@ -1,0 +1,26 @@
+<!-- Winners List View -->
+<!-- container table and table-striped are bootstrap classes and are used only for styiling -->
+<div class="container">
+  <!-- a link element that leads to the submit-code component through the router -->
+  <a [routerLink]="['/submit-code']">Submit code</a>
+</div>
+<div class="container">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Full Name</th>
+        <th>Email</th>
+        <th>Award</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- A directive that loops all winners from the winners array from the component and generates the element every time but with different data from the coresponding winner -->
+      <tr *ngFor="let winner of winners">
+        <!-- bindings from the code in the component are called with {{}} brackets. Properties and objects are accessed as usual with .-->
+        <td>{{winner.userCode.firstName}} {{winner.userCode.lastName}}</td>
+        <td>{{winner.userCode.email}}</td>
+        <td>{{winner.award.awardName}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
