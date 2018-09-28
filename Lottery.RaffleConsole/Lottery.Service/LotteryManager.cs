@@ -102,7 +102,7 @@ namespace Lottery.Service
                 throw new ApplicationException("We are out of awards. Sorry!");
 
             var rnd = new Random();
-            var randomAwardIndex = rnd.Next(0, availableAwards.Count - 1);
+            var randomAwardIndex = rnd.Next(0, availableAwards.Count);
             return availableAwards[randomAwardIndex];
         }
     }

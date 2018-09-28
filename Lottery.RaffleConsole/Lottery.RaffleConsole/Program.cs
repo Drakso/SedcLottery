@@ -36,7 +36,7 @@ namespace Lottery.RaffleConsole
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json", true, true);
+                .AddJsonFile("appsettings.json", false, true);
 
             IConfigurationRoot configuration = builder.Build();
 
