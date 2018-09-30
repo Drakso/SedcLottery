@@ -46,3 +46,7 @@
 /Lottery.RaffleConsole/Lottery.Data.Model/bin/Release/netstandard2.0
 /Lottery.RaffleConsole/Lottery.RaffleConsole/bin/Release/netcoreapp2.1/win10-x64
 /Lottery.RaffleConsole/Lottery.Service/bin/Release/netstandard2.0
+/Lottery.RaffleConsole/Lottery.RaffleConsole/bin/Release/netcoreapp2.1
+/Lottery.RaffleConsole/Lottery.RaffleConsole/publish
+/Lottery.RaffleConsole/Lottery.Scheduler/bin
+/Lottery.RaffleConsole/Lottery.Scheduler/obj

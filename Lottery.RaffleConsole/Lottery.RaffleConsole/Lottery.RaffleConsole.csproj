@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Lottery.Scheduler\Lottery.Scheduler.csproj" />
     <ProjectReference Include="..\Lottery.Service\Lottery.Service.csproj" />
   </ItemGroup>
 
