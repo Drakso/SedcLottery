@@ -105,3 +105,25 @@ What we covered so far:
 * Talk about asp.net Core
 * Talk about the console service for per-day and final raffle
 * Begin developing the console service
+
+### Class 10
+* Developing the console service for per-day and final raffle
+* Talked about the infrastructure and business logic
+* Students try to implement business logic independently
+
+### Class 11
+* Implementing full solution for console service
+* Debugging the console service to understand how it works
+* Implement scheduling with windows task scheduler
+* Introduction to docker
+
+### Class 12
+* Implement scheduling with cron
+* Talk about docker containers and images
+* Deploy the console service with docker locally
+
+### Class 13
+* Talk about docker and azure deployment
+* Deploy the console service with docker to azure
+* Talk about the benefits of deploying to azure and using docker
+* Discussion about Async/Await
