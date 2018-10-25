@@ -127,3 +127,14 @@ What we covered so far:
 * Deploy the console service with docker to azure
 * Talk about the benefits of deploying to azure and using docker
 * Discussion about Async/Await
+
+### Class 14
+* Finish azure deployment
+* Create another console application for processing excel files
+* Deploy excel console on azure
+* Create option for excel file to be uploaded on azure
+
+### Class 15
+* Finish with excel files stored on Azure
+* Discussion about unit tests
+* Discussion about testing
